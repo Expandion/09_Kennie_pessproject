@@ -4,6 +4,8 @@
 if (!isset($_POST["btnSearch"])){
 ?>
 <!-- create a form to search for patrol car based on id -->
+<link href="header_style.css" rel="stylesheet" type="text/css">
+<link href="content_style.css" rel="stylesheet" type="text/css">
 <form name="form1" method="post"
 	action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?> ">
 	<table class="ContentStyle">
@@ -63,7 +65,7 @@ else
 <!-- display a form for operator to update status of patrol car -->
 <form name="form2" method="post"
 	action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?> ">
-	<table>
+	<table class="ContentStyle">
 		<tr></tr>
 		<tr>
 			<td>ID :</td>
